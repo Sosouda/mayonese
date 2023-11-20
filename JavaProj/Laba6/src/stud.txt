@@ -1,0 +1,10 @@
+Aaaaaaa 1999 2.8
+Cccccccc 1782 5.7
+Bbbbbbbbb 2015 6.0
+Aaaaaaa1 1999 2.8
+Cccccccc1 1782 5.7
+Bbbbbbbbb1 2015 6.0
+Aaaaaaa2 1999 2.8
+Cccccccc2 1782 5.7
+Bbbbbbbbb2 2015 6.0
+Aa0 2111 2.8
