@@ -1,0 +1,3 @@
+﻿  maincpp.cpp
+D:\VisStud\proekts\LabaM1\LabaM1\maincpp.cpp(23): warning C4715: kvdrt: значение возвращается не при всех путях выполнения
+  LabaM1.vcxproj -> D:\VisStud\proekts\LabaM1\Debug\LabaM1.exe
