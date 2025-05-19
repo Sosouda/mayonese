@@ -1,0 +1,259 @@
+
+@font-face {
+    font-family: 'Calculator';
+    src: url('/digital_7.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'GOST_A';
+    src: url('/GOST_A.TTF') format('truetype');
+}
+
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+}
+
+.corpus{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 50px, auto;
+    width: 900px;
+    height: 800px;
+    border-radius: 20px;
+    background: #cfcfd1;
+    color:  #000;
+    font-family: 'GOST_A';
+    padding: 18px;
+    box-shadow: 5px 5px 5px #4f4f4f;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+}
+
+.calc{
+    display: grid;
+    justify-content: center;
+    margin: 50px, auto;
+    width: 800px;
+    height: 700px;
+    border-radius: 20px;
+    background: #5b4b42;
+    color:  #2c2d41;
+    font-family: 'GOST_A';
+    padding: 28px;
+    
+}
+
+
+
+
+.calc-screen{
+    height: 120px;
+    width: 740px;
+    padding: 10px;
+    background: #2a2c2e;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+
+
+.output-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+
+.space-1 {
+    display: flex;
+    flex-direction: row; /* Расположение в строку */
+    justify-content: space-between; /* Пробел между элементами */
+    width: 80%;/* Высота для отступа между первым и вторым элементами */
+}
+
+.sign-output{
+    display: flex;
+    color: #2b91a3;
+    font-size: 7rem; /* Размер шрифта для основного вывода */
+    font-family: Calculator;
+    justify-content: end;
+    margin: 0;
+}
+
+.main-output{
+    color: #2b91a3;
+    font-size: 7rem; /* Размер шрифта для основного вывода */
+    font-family: Calculator;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.additional-output {
+    color: #2b91a3;
+    font-size: 7rem; /* Размер шрифта для основного вывода */
+    font-family: Calculator;
+    margin: 0;/* Размер шрифта для дополнительного числа */
+    /* Отступ между элементами */
+    align-self: flex-end; /* Выравнивание по нижнему краю */
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(8, auto); 
+    gap: 10px; 
+    justify-items: center;
+}
+.btn.grad{
+    width: 200%;
+    border-radius: 5%;
+}
+.btn{
+    height: 70px;
+    width: 70px;
+    background: #d3d3d5;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn.divide{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn.ndiv{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn.nmul{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn.nmin{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn.nplus{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.batn.bg-brown{
+    height: 70px;
+    width: 70px;
+    /*background: #5b4b42;*/
+    color: #443732;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 2.5rem;
+    
+    user-select: none;
+    
+}
+
+.batn.grey{
+    display: inline-block;
+    height: 25px;
+    width: 200px;
+    background: #e0d9d4;
+    color: #0a0a0a;
+    text-align:center;
+    font-size: 1.5rem;
+    
+    user-select: none;
+}
+
+.btn:hover{
+    filter: brightness(120%);
+}
+
+.btn:active{
+    filter: brightness(90%);
+}
+
+.btn.bg-white{
+    background: #f7f7f7;
+}
+
+.btn.bg-red{
+    background: #cd6759;
+}
+
+.btn.instr{
+    height: 70px;
+    width: 210px;
+    background: #666668;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Calculator';
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+}
+
+/* Прячем чекбокс */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Слайдер */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #403a37;
+    transition: .4s;
+    border-radius: 10%;
+    display: flex; /* Используем flex для центровки текста */
+    align-items: center; /* Центровка по вертикали */
+    justify-content: space-between; /* Разделяем текст */
+    padding: 0 5px; /* Отступы */
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 13px;
+    display: flex;
+    align-items: end;
+    background-color: #2a2928;
+    transition: .4s;
+    border-radius: 15%;
+}
+
+/* Передвигаем кружок при включении */
+input:checked + .slider:before {
+    transform: translateX(45px);
+}

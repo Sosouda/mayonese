@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Calculator";
+    src: url("Digital-7_niew.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GOST";
+    src: url("GOST.woff") format("woff"), url("GOST.woff2") format("woff2"),
+        url("GOST.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GOST_A";
+    src: url("GOST2.304-81typeA.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

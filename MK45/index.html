@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microcalculator MK45</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="shortcut icon" href=""> 
+    <script>
+        window.addEventListener('load', ()=>{
+            const toggleSwitch = document.getElementById('toggleSwitch');
+            if(toggleSwitch){
+                toggleSwitch.checked = false;
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="screen">
+    <div class="corpus">
+    <div class="calc">
+        <div class="calc-screen">
+            <div class="output-container">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p class="sign-output"> </p>
+                <div class="space-1">
+                    <p class="main-output">0</p>
+                    <p class="additional-output"></p>
+                </div>
+            </div>
+        </div>
+        <div class="name">
+        <div class="batn bg-brown"></div>
+        <div class="batn bg-brown"></div>
+        <div class="batn bg-brown"></div>
+        <div class="batn bg-brown"></div>
+        <div class="batn bg-brown"></div>
+        <div class="batn bg-brown"></div>
+        <div class="batn bg-brown"></div>
+        <div class="batn grey "> Кальуклятор МК45</div>
+        </div>
+        <div class="buttons">
+            <div class="btn C bg-red">C</div>
+            <div class="btn RG">Р->Г</div>
+            <div class="btn GR">Г->Р</div>
+            <div class="btn VP">ВП</div>
+            <div class="batn "></div>
+            <div class="batn "></div>
+            <div class="batn bg-brown"><b>ГРАД.</b></div>
+            <div class="batn"></div>
+            <div class="batn bg-brown "><b>РАД.</b></div>
+           
+            <div class="btn arc">arc</div>
+            <div class="btn sin">sin</div>
+            <div class="btn cos">cos</div>
+            <div class="btn tg">tg</div>
+            <div class="batn"></div>
+            <div class="batn"></div>
+            <div class="batn"></div>
+            <label class="switch">
+                <input type="checkbox" id="toggleSwitch">
+                <span class="slider" id="slider">  
+                </span>
+            </label>
+            <div class="batn"></div>
+
+
+            <div class="btn skobka1">[(</div>
+            <div class="btn skobka2">)]</div>
+            <div class="btn 1divx">1/x</div>
+            <div class="btn seven bg-white">7</div>
+            <div class="btn eight bg-white">8</div>
+            <div class="btn nine bg-white">9</div>
+            <div class="btn divide">÷</div>
+            <div class="btn ndiv">П÷</div>
+            <div class="btn SP">СП</div>
+
+            <div class="btn ln">ln</div>
+            <div class="btn ex">eˣ</div>
+            <div class="btn nfac">n!</div>
+            <div class="btn four bg-white">4</div>
+            <div class="btn five bg-white">5</div>
+            <div class="btn six bg-white">6</div>
+            <div class="btn mul">✕</div>
+            <div class="btn nmul">П✕</div>
+            <div class="btn nx">п->x</div>
+
+            <div class="btn lg">lg</div>
+            <div class="btn 10x">10ˣ</div>
+            <div class="btn pi">π</div>
+            <div class="btn one bg-white">1</div>
+            <div class="btn two bg-white">2</div>
+            <div class="btn three bg-white">3</div>
+            <div class="btn minus">-</div>
+            <div class="btn nmin">П-</div>
+            <div class="btn xn">x->п</div>
+
+            <div class="btn y^x">yˣ</div>
+            <div class="btn sqrt">√</div>
+            <div class="btn x-n">x<->п</div>
+            <div class="btn zero bg-white">0</div>
+            <div class="btn point bg-white">.</div>
+            <div class="btn mod bg-white">/-/</div>
+            <div class="btn plus">+</div>
+            <div class="btn nplus">П+</div>
+            <div class="btn eq">=</div>
+
+        </div>
+    </div>
+    </div>
+    <div class="info-screen">
+    <div class="info"></div>
+        <div class="btn instr">
+            <a href = "instrukciya.html">Инструкция</a>
+        </div>
+    </div>
+    </div>
+   
+
+    <script src="calc2.js"></script>
+</body>
+</html>

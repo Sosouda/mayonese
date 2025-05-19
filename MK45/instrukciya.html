@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instruction MK45</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="">
+
+        <style>
+            /* Основные стили для страницы */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+
+            h1 {
+                text-align: center;
+                color: #4CAF50;
+                margin-top: 20px;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 30px auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            p {
+                line-height: 1.6;
+            }
+
+            .highlight {
+                font-weight: bold;
+                color: #4CAF50;
+            }
+
+            .btn {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .btn a {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 18px;
+                transition: background-color 0.3s ease;
+            }
+
+            .btn a:hover {
+                background-color: #45a049;
+            }
+
+            /* Стили для списка с инструкциями */
+            .instruction-list {
+                margin-top: 20px;
+            }
+
+            .instruction-list li {
+                margin-bottom: 10px;
+                padding-left: 20px;
+                position: relative;
+            }
+
+            .instruction-list li::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: #4CAF50;
+                font-size: 20px;
+            }
+
+            /* Стили для примеров */
+            .examples {
+                margin-top: 30px;
+                font-size: 18px;
+                line-height: 1.8;
+            }
+
+            .example {
+                margin-bottom: 20px;
+                padding: 15px;
+                background-color: #f9f9f9;
+                border-left: 5px solid #4CAF50;
+            }
+
+            .note {
+                background-color: #ffeb3b;
+                padding: 10px;
+                margin: 20px 0;
+                border-radius: 5px;
+            }
+
+            .note p {
+                margin: 0;
+            }
+
+            .highlight-result {
+                color: #FF5722;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Инструкция по использованию калькулятора MK45</h1>
+
+            <p>Следуйте приведенным ниже инструкциям для правильного использования калькулятора MK45.</p>
+
+            <div class="instruction-list">
+                <h3>Основные клавиши:</h3>
+                <ul>
+                    <li><span class="highlight">0...9</span> - клавиши ввода цифр</li>
+                    <li><span class="highlight">.</span> - клавиша ввода запятой</li>
+                    <li><span class="highlight">+, -, Х, ÷</span> - клавиши для выполнения операций сложения, вычитания, умножения и деления</li>
+                    <li><span class="highlight">/-/</span> - клавиша изменения знака числа или порядка</li>
+                    <li><span class="highlight">[( , )]</span> - клавиши для работы с двухуровневыми скобками</li>
+                    <li><span class="highlight">ВП</span> - клавиша ввода порядка чисел</li>
+                    <li><span class="highlight">π</span> - клавиша вызова числа пи</li>
+                    <li><span class="highlight">С</span> - клавиша общего сброса. Для очистки МК необходимо двухкратное нажатие клавиши С.</li>
+                    <li><span class="highlight">√</span> - клавиша извлечения квадратного корня</li>
+                    <li><span class="highlight">1/x</span> - клавиша вычисления обратной величины числа</li>
+                    <li><span class="highlight">n!</span> - клавиша вычисления факториала</li>
+                    <li><span class="highlight">у^х</span> - клавиша возведения числа у в степень х</li>
+                    <li><span class="highlight">sin, cos, tg</span> - клавиши для вычисления тригонометрических функций</li>
+                    <li><span class="highlight">arc</span> - клавиша для вычисления обратных тригонометрических функций</li>
+                    <li><span class="highlight">ln, lg, 10^x, e^x</span> - клавиши для вычисления логарифмов</li>
+                    <li><span class="highlight">Г->Р, Р->Г</span> - клавиши для перевода величин между градусами и радианами</li>
+                </ul>
+            </div>
+
+            <div class="note">
+                <p><strong>Примечание:</strong> При нажатии клавиши С не происходит сброс регистра памяти.</p>
+            </div>
+
+            <div class="examples">
+                <h3>Примеры работы калькулятора:</h3>
+
+                <div class="example">
+                    <strong>1. Сложение, вычитание, умножение, деление:</strong>
+                    <p>3 + 7 ✕ 5 - 3 ÷ 8 = <br>
+                    <span class="highlight-result">5.875</span></p>
+                </div>
+
+                <div class="example">
+                    <strong>2. Вычисление с постоянной:</strong>
+                    <p>8 + 5 + 3 = = = <br>
+                    <span class="highlight-result">22</span></p>
+                    <p> 2 0 ÷ 5 = 3 0 = </p>
+                    <span class="highlight-result">4; 6</span></p>
+                </div>
+
+                <div class="example">
+                    <strong>3. Смена математического знака числа:</strong>
+                    <p>8 ✕ 7 /-/ ÷ 5 = <br>
+                    <span class="highlight-result">-11.2</span></p>
+                </div>
+
+                <div class="example">
+                    <strong>4. Операции с двухуровневыми скобками:</strong>
+                    <p>1 5 Х 4 + [( 8 ÷ 2 )] ÷ [( [( 3 + 2 )] ✕ [( 4 - 6 )] )] = <br>
+                    <span class="highlight-result">-6.4</span></p>
+                </div>
+
+                <div class="example">
+                    <strong>5. Введение числа в экспоненциальной форме:</strong>
+                    <p>8 ВП 6 /-/ ВП ✕ 7 = <br>
+                    <span class="highlight-result">6.4</span></p>
+                </div>
+
+                <div class="example">
+                    <strong>6. Операции с константами:</strong>
+                    <p>3 Х  π =  <br>
+                    <span class="highlight-result">9.424778</span></p>
+                </div>
+
+                <div class="example">
+                    <strong>7. Перевод градусной меры в радианную и наоборот:</strong>
+                    <p>π Р->Г = <br>
+                    <span class="highlight-result">180</span></p>
+                    <p>Г->Р =  <br>
+                    <span class="highlight-result">3.1415926</span></p>
+                </div>
+
+                <div class="example">
+                    <strong>8. Извлечение квадратного корня:</strong>
+                    <p>3 6 Х 2 5 √ = <br>
+                    <span class="highlight-result">180</span></p>
+                </div>
+
+                <div class="example">
+                    <strong>9. Возведение в степень:</strong>
+                    <p>5 . 2 у<sup>x</sup> 3 . 5 = <br>
+                    <span class="highlight-result">320.6355</span></p>
+                </div>
+            </div>
+
+            <div class="btn">
+                <a href="index.html">калькулятор</a>
+            </div>
+        </div>
+
+    </body>
+</html>
